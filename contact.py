@@ -46,9 +46,11 @@ def cari_kontak(daftar_kontak):
     for kontak in daftar_kontak:
         if kontak["nama"] == nama:
             print("Kontak ditemukan:")
+            print("======================")
             print("Nama:", kontak["nama"])
             print("Email:", kontak["email"])
             print("Telepon:", kontak["telepon"])
+            print("======================")
             return
     print(f"Kontak {nama} tidak ditemukan.")
 

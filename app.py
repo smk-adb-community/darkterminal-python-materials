@@ -12,8 +12,9 @@ while True:
     print("3. Hapus Kontak")
     print("4. Cari Kontak")
     print("0. Keluar Program")
+    print("--------------------")
 
-    menu = input("Pilih menu : ")
+    menu = input("* Pilih menu : ")
 
     if menu == "0":
         contact.save_kontak(daftar_kontak)
@@ -23,7 +24,7 @@ while True:
     elif menu == "2":
         kontak = contact.new_kontak()
         daftar_kontak.append(kontak)
-        print("Kontak berhasil ditambahkan!")
+        print("Kontak berhasil ditambahkan!")   
     elif menu == "3":
         contact.hapus_kontak(daftar_kontak)
     elif menu == "4":
