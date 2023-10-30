@@ -9,12 +9,12 @@ while True:
     print("2. Tambah Kontak")
     print("3. Hapus Kontak")
     print("4. Cari Kontak")
-    print("0. Keluar Program")
+    print("5. Keluar Program")
     print("***** Menu *****")
 
     menu = input("Pilih menu : ")
 
-    if menu == "0":
+    if menu == "5":
         contact.save_kontak(daftar_kontak)
         print("program selesai berjalan,sampai jumpa.")
         break
