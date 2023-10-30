@@ -11,16 +11,16 @@ def load_kontak():
 # Fungsi untuk menampilkan kontak
 def display_kontak(daftar_kontak):
     if not daftar_kontak:
-        print("+-------------------+")
+        print("||===|| Menu ||===||")
         print("Daftar kontak kosong")
-        print("+-------------------+")
+        print("||===|| Menu ||===||")
     else:
         for kontak in daftar_kontak:
-            print("+-------------------+")
+            print("_[^-^]_[^-^]_[^-^]_[^-^]_")
             print("Nama:", kontak["nama"])
             print("Email:", kontak["email"])
             print("Telepon:", kontak["telepon"])
-            print("+-------------------+")
+            print("_[^-^]_[^-^]_[^-^]_[^-^]_")
 
 # Fungsi untuk membuat kontak baru
 def new_kontak():
@@ -41,7 +41,7 @@ def save_kontak(daftar_kontak):
 
 # Fungsi untuk mencari kontak
 def cari_kontak(daftar_kontak):
-    nama = input("Masukkan nama kontak yang ingin dicari: ")
+    nama = input("Masukkan nama kontak yang ingin dicari==> ")
     for kontak in daftar_kontak:
         if kontak["nama"] == nama:
             print("Kontak ditemukan:")
@@ -49,14 +49,14 @@ def cari_kontak(daftar_kontak):
             print("Email:", kontak["email"])
             print("Telepon:", kontak["telepon"])
             return
-    print(f"Kontak {nama} tidak ditemukan.")
+    print(f"Maaf, kontak {nama} tidak ditemukan:(.")
 
 # Fungsi untuk mengahapus kontak
 def hapus_kontak(daftar_kontak):
-    nama = input("Masukkan nama kontak yang ingin dihapus: ")
+    nama = input("Masukkan nama kontak yang ingin dihapus==> ")
     for kontak in daftar_kontak:
         if kontak["nama"] == nama:
             daftar_kontak.remove(kontak)
-            print(f"Kontak {nama} telah dihapus.")
+            print(f"Anda telah menghapus kontak {nama}.")
             return
-    print(f"Kontak {nama} tidak ditemukan.")
+    print(f"Maaf, kontak {nama} tidak ditemukan:(.")
