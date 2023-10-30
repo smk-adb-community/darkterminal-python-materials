@@ -58,6 +58,6 @@ def hapus_kontak(daftar_kontak):
     for kontak in daftar_kontak:
         if kontak["nama"] == nama:
             daftar_kontak.remove(kontak)
-            print(f"Kontak {nama} telah dihapus.")
+            print(f"Kontak {nama} berhasil dihapus!")
             return
     print(f"Kontak {nama} tidak ditemukan.")
