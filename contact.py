@@ -33,7 +33,6 @@ def new_kontak():
         "telepon": telepon
     }
     return kontak
-    print(f"Berhasil menambahkan kontak baru")
 
 # Fungsi untuk menyimpan kontak ke file JSON
 def save_kontak(daftar_kontak):
@@ -53,7 +52,7 @@ def cari_kontak(daftar_kontak):
             return
     print(f"Kontak {nama} tidak ditemukan.")
 
-# Fungsi untuk mengahapus kontak
+# Fungsi untuk menghapus kontak
 def hapus_kontak(daftar_kontak):
     nama = input("Masukkan nama kontak yang ingin dihapus: ")
     for kontak in daftar_kontak:
