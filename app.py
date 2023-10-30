@@ -29,4 +29,4 @@ while True:
     else:
         print("Menu tidak tersedia")
 
-print("Program selesai berjalan, sampai jumpa")
+print("Program berjalan lancar, sampai jumpa")
