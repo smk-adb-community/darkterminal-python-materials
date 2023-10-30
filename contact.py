@@ -16,11 +16,11 @@ def display_kontak(daftar_kontak):
         print("=======#######=======")
     else:
         for kontak in daftar_kontak:
-            print("+-------------------+")
+            print("========#######========")
             print("Nama:", kontak["nama"])
             print("Email:", kontak["email"])
             print("Telepon:", kontak["telepon"])
-            print("+-------------------+")
+            print("========#######========")
 
 # Fungsi untuk membuat kontak baru
 def new_kontak():
