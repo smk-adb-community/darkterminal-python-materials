@@ -11,7 +11,7 @@ def load_kontak():
 # Fungsi untuk menampilkan kontak
 def display_kontak(daftar_kontak):
     if not daftar_kontak:
-        print("#####################")
+        print("=====================")
         print("Daftar kontak kosong")
         print("=====================")
     else:
