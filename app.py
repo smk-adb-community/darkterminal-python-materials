@@ -7,8 +7,9 @@ while True:
     print("###### Menu ######")
     print("1. Daftar Kontak")
     print("2. Tambah Kontak")
-    print("3. Hapus Kontak")
-    print("4. Cari Kontak")
+    print("3. Ubah Kontak")
+    print("4. Hapus Kontak")
+    print("5. Cari Kontak")
     print("0. Keluar Program")
     print("###### Menu ######")
 
@@ -23,8 +24,11 @@ while True:
         kontak = contact.new_kontak()
         daftar_kontak.append(kontak)
     elif menu == "3":
-        contact.hapus_kontak(daftar_kontak)
+        daftar_kontak_baru = contact.ubah_kontak(daftar_kontak)
+        contact.save_kontak(daftar_kontak)
     elif menu == "4":
+        contact.hapus_kontak(daftar_kontak)
+    elif menu == "5":
         contact.cari_kontak(daftar_kontak)
     else:
         print("Menu tidak tersedia")
