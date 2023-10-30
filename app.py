@@ -23,7 +23,7 @@ while True:
     elif menu == "2":
         kontak = contact.new_kontak()
         daftar_kontak.append(kontak)
-        print("Kontak berhasil ditambahkan!")
+        print("kontak berhasil ditambahkan!")
     elif menu == "3":
         contact.hapus_kontak(daftar_kontak)
     elif menu == "4":
