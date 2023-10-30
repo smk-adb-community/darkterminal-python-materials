@@ -10,8 +10,9 @@ while True:
     print("3. Hapus Kontak")
     print("4. Cari Kontak")
     print("0. Keluar Program")
-    print("###### Menu ######")
+    print("#####- Menu -#####")
 
+    print("- CONTACT MANAGEMENT -")
     menu = input("Pilih menu : ")
 
     if menu == "0":
