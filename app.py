@@ -4,15 +4,16 @@ import contact
 daftar_kontak = contact.load_kontak()
 
 while True:
-    print("###### Menu ######")
-    print("1. Daftar Kontak")
-    print("2. Tambah Kontak")
-    print("3. Hapus Kontak")
-    print("4. Cari Kontak")
-    print("0. Keluar Program")
-    print("###### Menu ######")
+    print("###WELCOME TO CONTACT###")
+    print("###### Daftar Menu ######")
+    print("|1. Daftar Kontak |")
+    print("|2. Tambah Kontak |")
+    print("|3. Hapus Kontak  |")
+    print("|4. Cari Kontak   |")
+    print("|0. Keluar Program|")
+    print("###### Pencarian ######")
 
-    menu = input("Pilih menu : ")
+    menu = input("Silahkan Cari Menu Yang Tersedia : ")
 
     if menu == "0":
         contact.save_kontak(daftar_kontak)
@@ -29,4 +30,4 @@ while True:
     else:
         print("Menu tidak tersedia")
 
-print("Program selesai berjalan, sampai jumpa")
+print("Thank You and See You")
