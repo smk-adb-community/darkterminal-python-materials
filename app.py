@@ -16,7 +16,7 @@ while True:
 
     if menu == "5":
         contact.save_kontak(daftar_kontak)
-        print("program selesai berjalan,sampai jumpa.")
+        print("program selesai berjalan,Terimakasih.")
         break
     elif menu == "1":
         contact.display_kontak(daftar_kontak)
