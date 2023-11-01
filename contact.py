@@ -16,11 +16,11 @@ def display_kontak(daftar_kontak):
         print("+###################+")
     else:
         for kontak in daftar_kontak:
-            print("+-------------------+")
+            print("+*******************+")
             print("Nama:", kontak["nama"])
             print("Email:", kontak["email"])
             print("Telepon:", kontak["telepon"])
-            print("+-------------------+")
+            print("+*******************+")
 
 # Fungsi untuk membuat kontak baru
 def new_kontak():
@@ -41,7 +41,7 @@ def save_kontak(daftar_kontak):
 
 # Fungsi untuk mencari kontak
 def cari_kontak(daftar_kontak):
-    nama = input("Masukkan nama kontak yang ingin dicari: ")
+    nama = input("Silahkan masukkan nama kontak yang ingin dicari: ")
     for kontak in daftar_kontak:
         if kontak["nama"] == nama:
             print("Kontak ditemukan:")
@@ -53,7 +53,7 @@ def cari_kontak(daftar_kontak):
 
 # Fungsi untuk mengahapus kontak
 def hapus_kontak(daftar_kontak):
-    nama = input("Masukkan nama kontak yang ingin dihapus: ")
+    nama = input("Silahkan masukkan nama kontak yang ingin dihapus: ")
     for kontak in daftar_kontak:
         if kontak["nama"] == nama:
             daftar_kontak.remove(kontak)

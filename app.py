@@ -13,7 +13,7 @@ while True:
     print("###### Menu ######")
 
     print("Welcome to the Python!")
-    menu = input("Pilih menu : ")
+    menu = input("Ayo Pilih menu : ")
 
     if menu == "0":
         contact.save_kontak(daftar_kontak)
@@ -28,6 +28,6 @@ while True:
     elif menu == "4":
         contact.cari_kontak(daftar_kontak)
     else:
-        print("Tidak ada Menu")
+        print("Tidak ada Menu yang spesifik")
 
-print("Program berakhir, Sampai jumpa!")
+print("Program berakhir, Sampai jumpa lagi!")
