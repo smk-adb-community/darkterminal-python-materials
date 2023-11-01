@@ -12,7 +12,7 @@ def load_kontak():
 def display_kontak(daftar_kontak):
     if not daftar_kontak:
         print("**********************")
-        print("Daftar kontak kosong")
+        print("Tidak ada kontak yang tersimpan")
         print("**********************")
 
     else:
