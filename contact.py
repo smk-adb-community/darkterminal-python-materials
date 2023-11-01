@@ -11,16 +11,16 @@ def load_kontak():
 # Fungsi untuk menampilkan kontak
 def display_kontak(daftar_kontak):
     if not daftar_kontak:
-        print("+-------------------+")
+        print("=====================")
         print("Daftar kontak kosong")
-        print("+-------------------+")
+        print("=====================")
     else:
         for kontak in daftar_kontak:
-            print("+-------------------+")
+            print("=====================")
             print("Nama:", kontak["nama"])
             print("Email:", kontak["email"])
             print("Telepon:", kontak["telepon"])
-            print("+-------------------+")
+            print("=====================")
 
 # Fungsi untuk membuat kontak baru
 def new_kontak():
@@ -38,6 +38,7 @@ def new_kontak():
 def save_kontak(daftar_kontak):
     with open("kontak.json", "w") as file:
         json.dump(daftar_kontak, file)
+    print(f"Kontak berhasil disimpan.")
 
 # Fungsi untuk mencari kontak
 def cari_kontak(daftar_kontak):
@@ -51,12 +52,13 @@ def cari_kontak(daftar_kontak):
             return
     print(f"Kontak {nama} tidak ditemukan.")
 
-# Fungsi untuk mengahapus kontak
+# Fungsi untuk menghapus kontak
 def hapus_kontak(daftar_kontak):
     nama = input("Masukkan nama kontak yang ingin dihapus: ")
     for kontak in daftar_kontak:
         if kontak["nama"] == nama:
             daftar_kontak.remove(kontak)
-            print(f"Kontak {nama} telah dihapus.")
+            print(f"Berhasil menghapus kontak {nama}.")
             return
     print(f"Kontak {nama} tidak ditemukan.")
+text_to_remove = "& C:/Python312/python.exe c:/Users/user/python-contact-management/app.py"
