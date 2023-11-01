@@ -49,7 +49,7 @@ def cari_kontak(daftar_kontak):
             print("Email:", kontak["email"])
             print("Telepon:", kontak["telepon"])
             return
-    print(f"Tidak dapat menemukan Kontak {nama}.")
+    print(f"Tidak dapat menemukan Kontak {nama} yang dicari")
 
 # Fungsi untuk mengahapus kontak
 def hapus_kontak(daftar_kontak):

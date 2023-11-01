@@ -12,7 +12,7 @@ while True:
     print("0. Keluar Program")
     print("###### Menu ######")
 
-    print("Welcome to the Python!")
+    print("Welcome!")
     menu = input("Ayo Pilih menu : ")
 
     if menu == "0":
