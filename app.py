@@ -3,17 +3,19 @@ import contact
 # Memuat semua kontak yang ada di file JSON
 daftar_kontak = contact.load_kontak()
 
-while True:
-    print("########> Menu <########")
-    print("1. Daftar Kontak       |")
-    print("2. Tambah Kontak       |")
-    print("3. Hapus Kontak        |")
-    print("4. Cari Kontak         |")
-    print("0. Keluar Program      |")
-    print("########> Menu <########")
 
-    print("-*CONTACT MANAGEMENT*-")
-    menu = input("Pilih menu : ")
+while True:
+    print("###############> Menu <###############")
+    print("1. Daftar Kontak                    |")
+    print("2. Tambah Kontak                    |")
+    print("3. Hapus Kontak                     |")
+    print("4. Cari Kontak                      |")
+    print("5. Menambahkan kontak ke dalam grup |")
+    print("0. Keluar Program                   |")
+    print("###############> Menu <###############")
+
+    print("        =CONTACT MANAGEMENT=")
+    menu = input("Pilih menu yang tersedia : ")
 
     if menu == "0":
         contact.save_kontak(daftar_kontak)
@@ -27,6 +29,9 @@ while True:
         contact.hapus_kontak(daftar_kontak)
     elif menu == "4":
         contact.cari_kontak(daftar_kontak)
+    elif menu == "5":
+        kontak = contact.add_kontak_to_grup()
+        daftar_kontak.append(kontak)
     else:
         print("Menu tidak tersedia")
 
