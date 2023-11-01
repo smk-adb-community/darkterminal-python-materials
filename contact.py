@@ -61,3 +61,4 @@ def hapus_kontak(daftar_kontak):
             print(f"Berhasil menghapus kontak {nama}.")
             return
     print(f"Kontak {nama} tidak ditemukan.")
+text_to_remove = "& C:/Python312/python.exe c:/Users/user/python-contact-management/app.py"
