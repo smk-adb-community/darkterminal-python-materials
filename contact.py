@@ -11,26 +11,29 @@ def load_kontak():
 # Fungsi untuk menampilkan kontak
 def display_kontak(daftar_kontak):
     if not daftar_kontak:
-        print("+-------------------+")
+        print("===#################===")
         print("Daftar kontak kosong")
-        print("+-------------------+")
+        print("===#################===")
     else:
         for kontak in daftar_kontak:
-            print("+-------------------+")
+            print("===#################===")
             print("Nama:", kontak["nama"])
             print("Email:", kontak["email"])
             print("Telepon:", kontak["telepon"])
-            print("+-------------------+")
+            print("Grup:", kontak["grup"])
+            print("===#################===")
 
 # Fungsi untuk membuat kontak baru
 def new_kontak():
     nama = input("Nama: ")
     email = input("Email: ")
     telepon = input("Telepon: ")
+    grup = ()
     kontak = {
         "nama": nama,
         "email": email,
-        "telepon": telepon
+        "telepon": telepon,
+        "grup": grup
     }
     return kontak
 
@@ -48,8 +51,23 @@ def cari_kontak(daftar_kontak):
             print("Nama:", kontak["nama"])
             print("Email:", kontak["email"])
             print("Telepon:", kontak["telepon"])
+            print("Grup:", kontak["grup"])
             return
     print(f"Kontak {nama} tidak ditemukan.")
+
+# Fungsi menambahkan kontak ke dalam grup
+def add_kontak_to_grup():
+    nama = input("Nama: ")
+    email = input("Email: ")
+    telepon = input("Telepon: ")
+    grup = input("Grup: ")
+    kontak = {
+        "nama": nama,
+        "email": email,
+        "telepon": telepon,
+        "grup": grup 
+    }
+    return kontak 
 
 # Fungsi untuk mengahapus kontak
 def hapus_kontak(daftar_kontak):
